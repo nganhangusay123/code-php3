@@ -18,6 +18,7 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
+<<<<<<< HEAD
             'name' => substr(fake()->name(), 0, 20),
             'email' => fake()->unique()->safeEmail(),
             'email_verified_at' => now(),
@@ -27,6 +28,13 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'address' => fake()->address(),
             'phone' => fake()->phoneNumber()
+=======
+            'name' => fake()->name(),
+            'email' => fake()->unique()->safeEmail(),
+            'email_verified_at' => now(),
+            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'remember_token' => Str::random(10),
+>>>>>>> 866fac8ccb9a75a6612372ff1780eb2357e75559
         ];
     }
 

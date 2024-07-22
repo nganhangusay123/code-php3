@@ -12,7 +12,10 @@
             <th>Mã Sinh Viên</th>
             <th>Họ Và Tên</th>
             <th>Tuổi</th>
+<<<<<<< HEAD
             <th>Quê Quán</th>
+=======
+>>>>>>> 866fac8ccb9a75a6612372ff1780eb2357e75559
             <th>Chuyên Ngành</th>
             <th>Email</th>
         </thead>
@@ -22,7 +25,10 @@
                     <td><?=$value['msv'] ?></td>
                     <td><?=$value['ten'] ?></td>
                     <td><?=$value['tuoi'] ?></td>
+<<<<<<< HEAD
                     <td><?=$value['quequan'] ?></td>
+=======
+>>>>>>> 866fac8ccb9a75a6612372ff1780eb2357e75559
                     <td><?=$value['chuyennganh'] ?></td>
                     <td><?=$value['Email'] ?></td>
                 </tr>

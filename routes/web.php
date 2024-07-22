@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+<<<<<<< HEAD
 use App\Http\Controllers\TenSinhVienController;
 use App\Http\Controllers\UserController;
 
@@ -77,3 +78,27 @@ Route::group([
     Route::post('update-product', [ProductController::class, 'updatePostProduct'])
     ->name('updatePostProduct');
 });
+=======
+use App\Http\Controllers\nguyenvanan;
+//method http
+// get , post, put, pacth, delete
+//base url: [http://127.0.0.1:8000]
+Route::get('/test',function() {
+    echo 'hello';
+});
+Route::get('/',function() {
+    echo 'trang chủ';
+});
+//list-product
+Route::get('list-product',[ProductController::class,'showProduct']);
+
+// slug vs params
+// http://127.0.0.1:8000/list-product/1/iphone (slug)
+Route::get('get-product/{id}', [ProductController::class, 'getProduct']);
+
+
+
+// http://127.0.0.1:8000/list-product?id=1&name=iphone (params)
+Route::get('update-product',[ProductController::class, 'updateProduct']);
+Route::get('thong-tin-sv',[nguyenvanan::class,'showthongtin']);
+>>>>>>> 866fac8ccb9a75a6612372ff1780eb2357e75559
